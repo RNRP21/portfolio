@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="font-thin">
+ <!--page section-->
+    <div id="bg" class="h-screen bg-gray-900">
+<!--page nav-->
+        <nav id="nav" class="w-full fixed top-0 bg-gray-900 z-10">
+            <div class="container mx-auto py-6 px-5 flex justify-between">
+
+                <a href="#home" class="font-extrabold font-mono text-2xl text-slate-600">&lt;/&gt;_RNRP</a>
+
+                <ul id="text_nav" class="hidden md:flex space-x-10 font-bold text-lg uppercase text-white " >
+                    <li class="hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br hover:from-orange-400 hover:to-purple-700">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br hover:from-orange-400 hover:to-purple-700">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br hover:from-orange-400 hover:to-purple-700">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br hover:from-orange-400 hover:to-purple-700">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <img id="mode" class="hidden md:block w-6 h-6 cursor-pointer" src="img/sun.png">
+
+                <div id="burger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-slate-600"></div>
+                    <div class="w-6 h-0.5 bg-slate-600"></div>
+                    <div class="w-6 h-0.5 bg-slate-600"></div>
+                </div>
+                
+                <ul id="menu" class=" hidden absolute left-0 top-0 bg-gray-900 w-full text-center space-y-5 p-5 font-bold text-sm  uppercase text-white">
+                    <li class="hover:text-indigo-600">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="hover:text-indigo-600">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="hover:text-indigo-600">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="hover:text-indigo-600">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </nav>
+
+<!--page content-->
+        <div id="home">
+            <!--intro header-->
+            <div class="absolute lgx:top-1/4 top-1/3 lg:left-5 xl:left-32 font-bold xsmx:text-2xl text-3xl px-10 space-y-2 w-full lg:w-auto text-center ">
+                
+                <span id="iheader" class="text-white"> 
+                    Hello. I'm Renz Niño,
+                </span>
+
+                <p id="autotype" class="bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-purple-700"></p>
+            </div>
+            <div class="absolute flex flex-col lg:flex-row justify-center items-center  lg:justify-normal top-60 lg:top-1/2 left-0 right-0 lg:left-5 xl:left-32 font-bold text-3xl px-10 w-full lg:w-auto gap-5 ">
+                <div id="social1" class="flex justify-items-center space-x-5">
+                    <a href="https://www.facebook.com/RenzPgKoXD/"><img src="img/facebook.png" alt="" class="cursor-pointer hover:animate-bounce"></a>
+                    <a href="https://www.instagram.com/renznp21/"><img src="img/instagram.png" alt="" class="cursor-pointer hover:animate-bounce"></a>
+                    <a href="mailto:renzperalta1317@gmail.com"><img src="img/gmail.png" alt="" class="cursor-pointer hover:animate-bounce"></a>
+                </div>
+                <div id="social2" class="hidden  justify-items-center space-x-5">
+                    <a href="https://www.facebook.com/RenzPgKoXD/"><img src="img/facebook2.png" alt="" class="cursor-pointer hover:animate-bounce"></a>
+                    <a href="https://www.instagram.com/renznp21/"><img src="img/instagram2.png" alt="" class="cursor-pointer hover:animate-bounce"></a>
+                    <a href="mailto:renzperalta1317@gmail.com"><img src="img/gmail2.png" alt="" class="cursor-pointer hover:animate-bounce"></a>
+                </div>
+                <button class="bg-gradient-to-br from-orange-400 to-purple-700 p-2 rounded-3xl uppercase text-lg text-white " onclick="window.open('file/resume.pdf', '_blank')">download cv</button>
+               
+            </div>
+
+
+            <!--intro text-->
+
+            <div class=" absolute  smx:justify-self-center right-10 left-10 sm:justify-self-center lg:justify-self-end top-96 lgx:top-3/4 sm:right-52 sm:left-52 lg:top-1/4 lg:right-28 xl:right-52 rounded-full bg-gradient-to-br from-orange-400 to-purple-700 w-72 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                <img src="img/me.png" class="w-60 h-60 lg:w-72 lg:h-72 xl:w-96 xl:h-96 rounded-full border-4 border-transparent ">
+
+            </div>
+
+            <!--    <div  class="absolute space-y-2 top-96 lg:top-1/3 lg:right-10 xl:right-0 lg:w-1/2  xl:w-1/2 h-auto mx-10 p-3 rounded-lg bg-black text-white">
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-3">
+                        <img src="img/profileme.jpg" class="w-10 h-10 rounded-full border-blue-600 border-2 m-1">
+                        <span class="font-semibold cursor-pointer">Renz Niño R. Peralta</span>
+                    </div>
+                    <span class="font-extrabold px-5 cursor-pointer">. . .</span>
+                </div>
+
+                <div class="p-5 pt-0 text-justify ">
+                    <p >
+                        As a web developer, I transform concepts into functional websites and applications, combining creativity with technical expertise. I thrive on the challenges of an evolving digital landscape, from frontend design to backend architecture. Let's collaborate to shape the future of the web.
+                    </p>
+                </div>
+
+                <div class="flex space-x-5 px-5 ">
+                    <div class="flex cursor-pointer">
+                        <img src="img/heart.png" class="w-7" ><span>1.6K</span>
+                    </div>
+                    <div class="flex cursor-pointer">
+                        <img src="img/message.png" class="w-7" ><span>547</span>
+                    </div>
+                    <div class="flex cursor-pointer">
+                        <img src="img/repost.png" class="w-7" ><span>974</span>
+                    </div>
+                    <div class="flex cursor-pointer">
+                        <img src="img/plane.png" class="w-7" ><span>1.4K</span>
+                    </div>
+                </div>
+            </div>-->
+           
+
+            <!--Image-->
+
+        </div>
+
+    </div>
+
+    <!-- ABOUT SECTION -->
+     <div  id="about" class="min-h-screen py-40 lg:py-20 bg-gray-900">
+
+        <div class=" flex flex-col-reverse mx-10 lg:flex-row gap-3 lg:gap-20 ">
+            <!--pic-->
+            <div class="flex justify-center">
+                <img src="img/me2.png" class="border-4 w-72 lg:w-full border-purple-600 lg:m-10 rounded-full">
+
+            </div>
+                
+            <div class="my-auto flex flex-col text-justify  lg:mr-20 gap-3 p-4">
+                <span class="bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-purple-700 font-semibold text-2xl">
+                    About Me
+                </span>
+                <div id="about_head" class="text-white">
+                    <h1 class="font-mono text-3xl italic">Better Design</h1>
+                    <h1 class="font-mono text-3xl italic">Better Experience</h1>
+                </div>
+                <p class="text-gray-400 font-semibold">
+                    As a web developer, I transform concepts into functional websites and applications, combining creativity with technical expertise. 
+                    I thrive on the challenges of an evolving digital landscape, 
+                    from frontend design to backend architecture. Let's collaborate to shape the future of the web. 
+                </p>
+                <h2 class=" text-gray-500 font-semibold">HTML</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-full">
+                    <div class="w-5/6 bg-purple-600 h-1.5 rounded-full"></div>
+                </div>
+
+                <h2 class=" text-gray-500 font-semibold">PHP</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-full">
+                    <div class="w-full bg-purple-600 h-1.5 rounded-full"></div>
+                </div>
+
+                <h2 class=" text-gray-500 font-semibold">CSS</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-full">
+                    <div class="w-4/6 bg-purple-600 h-1.5 rounded-full"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills section -->
+     <div id="skills" class="min-h-screen py-40 bg-gray-900  ">
+        <div class="container mx-auto text-center">
+            <h1 class=" font-semibold text-4xl bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-purple-700 pb-5">Skills</h1>
+            <p class="text-gray-400 font-semibold pb-10 mx-5 lg:mx-20">"As a web developer, I've built a strong foundation in HTML, CSS, and Tailwind CSS, creating sleek and responsive designs. My skills in PHP and MySQL ensure that the backend is just as powerful as the frontend. I’m passionate about staying current with the latest technologies to deliver innovative and effective web solutions."</p>
+            <div id="skillbar" class="flex overflow-hidden space-x-5 group text-white h-60">
+                <div class="flex flex-row  animate-loop-scroll space-x-5 group-hover:paused cursor-pointer" >
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent">
+                            <img src="img/html-5-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl ">HTML</h1>
+                        </div>
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/css-3-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">CSS</h1>
+                        </div>
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/php-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">PHP</h1>
+                        </div>    
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/tailwind-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">TAILWIND</h1>
+                        </div>    
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/mysql-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">MYSQL</h1>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="flex flex-row animate-loop-scroll space-x-5 group-hover:paused cursor-pointer" >
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/html-5-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">HTML</h1>
+                        </div>
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/css-3-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">CSS</h1>
+                        </div>
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/php-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">PHP</h1>
+                        </div>    
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/tailwind-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">TAILWIND</h1>
+                        </div>    
+                    </div>
+                    <div class=" border-[#1f223c] border rounded-2xl">
+                        <div class="flex flex-col items-center rounded-2xl w-64  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent ">
+                            <img src="img/mysql-svgrepo-com.svg" class="p-5 w-2/3">
+                            <h1 class="font-extrabold text-3xl">MYSQL</h1>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact" class="min-h-screen py-40 bg-gray-900  ">
+
+        <div class="flex flex-col-reverse lg:flex-row space-x-0 space-y-10 lg:space-x-10 lg:space-y-0 w-full items-center">
+            <!-- contact form -->
+             
+                <div class="border-[#1f223c] border-[1px] rounded-2xl flex flex-col items-center mx-10 my-10 lg:my-0 ">
+                    <div class=" w-3/4  h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="flex flex-col p-4 space-y-5">
+                            <input type="hidden" name="access_key" value="3b6677a5-f61f-4a31-9f7f-c977e537f907">
+                            <div class="flex flex-col lg:flex-row gap-4">  
+                                <input type="text" name="firstname" required placeholder="First Name" class=" rounded-2xl p-1 font-semibold border-[1px]">
+                                <input type="text" name="lastname" required placeholder="Last Name" class=" rounded-2xl p-1 font-semibold border-[1px]">
+                            </div>
+                            <div class="flex flex-col lg:flex-row gap-4">
+                                <input type="email" name="email" required placeholder="Email" class=" rounded-2xl p-1 font-semibold border-[1px]">
+                                <input type="tel" name="phonenumber" required min="11" max="11" placeholder="Contact Number" class="rounded-2xl p-1 font-semibold border-[1px]">
+                            </div>
+                            <textarea name="message" required placeholder="Enter your message here..." class=" rounded-2xl p-1 font-semibold border-[1px]"></textarea>
+                            <button type="submit" class="bg-gradient-to-br from-orange-400 to-purple-700 p-2 rounded-3xl uppercase font-semibold text-white border-0">submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            <!-- social media -->
+            <div class="h-[1px] w-3/4 lg:h-[20rem] lg:w-[1px] bg-gradient-to-r lg:bg-gradient-to-t from-transparent via-violet-500 to-transparent">
+<p class="text-transparent">-</p>
+            </div>
+                
+             <div id="contactheader" class="flex flex-col space-y-3 text-white px-10">
+                <h1 class=" bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-purple-700 font-semibold text-2xl">Contact Me</h1>
+                <p class="text-gray-400 font-semibold">Feel free to reach out if you'd like to discuss a project, ask a question, or just connect. I'm always open to new opportunities and collaborations, so don't hesitate to get in touch!</p>
+                <div class="flex flex-row items-center gap-3 cursor-pointer hover:animate-bounce">
+                    <img src="img/facebook.png" alt="facebook">
+                    <span class="font-semibold text-xl">Renz Rivera</span>
+                </div>
+                <div class="flex flex-row items-center gap-3 cursor-pointer hover:animate-bounce">
+                    <img src="img/instagram.png" alt="instagram">
+                    <span class="font-semibold text-xl">renznp21</span>
+                </div>
+                <div class="flex flex-row items-center gap-3 cursor-pointer hover:animate-bounce">
+                    <img src="img/gmail.png" alt="gmail">
+                    <span class="font-semibold text-xl">renzperalta1317@gmail.com</span>
+                </div>
+             </div>
+
+             <div id="contactheader2" class="hidden flex-col space-y-3 px-10">
+                <h1 class=" bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-purple-700 font-semibold text-2xl">Contact Me</h1>
+                <p class="text-gray-400 font-semibold">Feel free to reach out if you'd like to discuss a project, ask a question, or just connect. I'm always open to new opportunities and collaborations, so don't hesitate to get in touch!</p>
+                <div class="flex flex-row items-center gap-3 cursor-pointer hover:animate-bounce">
+                    <img src="img/facebook2.png" alt="facebook">
+                    <span class="font-semibold text-xl">Renz Rivera</span>
+                </div>
+                <div class="flex flex-row items-center gap-3 cursor-pointer hover:animate-bounce">
+                    <img src="img/instagram2.png" alt="instagram">
+                    <span class="font-semibold text-xl">renznp21</span>
+                </div>
+                <div class="flex flex-row items-center gap-3 cursor-pointer hover:animate-bounce">
+                    <img src="img/gmail2.png" alt="gmail">
+                    <span class="font-semibold text-xl">renzperalta1317@gmail.com</span>
+                </div>
+             </div>
+
+        </div>
+
+    </div>
+    
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-gradient-to-br from-orange-400 to-purple-700 p-3 rounded-full text-white shadow-lg hover:bg-gradient-to-bl transition-all text-2xl">
+        <img src="img/bx-chevron-up.svg" alt="">
+    </button>
+    
+    <script src="../app.js"></script>
+    <script src="../autotyping.js"></script>
+</body>
+</html>
